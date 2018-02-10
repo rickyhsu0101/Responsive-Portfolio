@@ -1,0 +1,41 @@
+.content div{
+    position: relative;
+    width: 260px;
+    height: 200px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: left;
+}
+.content div:last-child::after{
+    display: block;
+    clear: left;
+}
+#image1{
+    background-image: url("./1.jpg");
+}
+#image2{
+    background-image: url("./2.jpg");
+}
+#image3{
+    background-image: url("./3.jpg");
+}
+#image4{
+    background-image: url("./4.jpg");
+}
+#image5{
+    background-image: url("./5.jpg");
+}
+.content div div{
+    position: absolute;
+    padding: 10px;
+    height: 40px;
+    background: #4aaaa5;
+    bottom: 15px;
+}
+.content h3{
+    text-align: center;
+    font-size: 1.2em;
+    color: #ffffff;
+}
