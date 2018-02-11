@@ -4,7 +4,7 @@
 
 body{
     text-align: center;
-    background-image: url("./circles-dark.png");
+    background-image: url("./../img/circles-dark.png");
 
 }
 .wrapper{
@@ -130,4 +130,84 @@ footer{
 }
 footer h3{
     color: lightgray;
+}
+@media screen and (min-width: 768px) and (max-width: 980px){
+    .content{
+        width: 350px;
+    }
+    .content img{
+        width: 230px;
+        float: none;
+    }
+    .main{
+        width: 635px;
+    }
+    .header{
+        width: 635px;
+    }
+    .contact{
+        width: 245px;
+    }
+    .contact img{
+        width: 60px;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 768px){
+    .main{
+        width: 635px;
+    }
+    .header{
+        width: 635px;
+    }
+    .content{
+        width: 595px;
+        float: none;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .contact{
+        width: 595px;
+        margin: auto;
+        float:none;
+        overflow: auto;
+    }
+}
+@media screen and (max-width: 640px){
+    .main{
+        width: 550px;
+    }
+    .content{
+        width: 510px;
+        float: none;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .content img{
+        width: 400px;
+        float: none;
+    }
+    .contact{
+        width: 510px;
+        margin: auto;
+        float:none;
+        overflow: auto;
+    }
+    .header{
+        width: 100%;
+    }
+    .header .title{
+        width: 100%;
+        float: none;
+    }
+    .header .nav{
+        width: 100%;
+        float: none;
+        padding-top:5px;
+        padding-bottom: 5px;
+    }
+    .nav h3{
+        line-height: 2em;
+        font-size: 1.2em;
+        padding: 0 50px;
+    }
 }

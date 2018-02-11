@@ -13,19 +13,19 @@
     clear: left;
 }
 #image1{
-    background-image: url("./1.jpg");
+    background-image: url("./../img/1.jpg");
 }
 #image2{
-    background-image: url("./2.jpg");
+    background-image: url("./../img/2.jpg");
 }
 #image3{
-    background-image: url("./3.jpg");
+    background-image: url("./../img/3.jpg");
 }
 #image4{
-    background-image: url("./4.jpg");
+    background-image: url("./../img/4.jpg");
 }
 #image5{
-    background-image: url("./5.jpg");
+    background-image: url("./../img/5.jpg");
 }
 .content div div{
     position: absolute;
@@ -38,4 +38,20 @@
     text-align: center;
     font-size: 1.2em;
     color: #ffffff;
+}
+@media screen and (min-width: 768px) and (max-width: 980px){
+    .content div{
+        width: 250px;
+    }
+}
+@media screen and (min-width: 640px) and (max-width: 768px){
+    .content div{
+        width: 230px;
+    }
+}
+@media screen and (max-width: 640px){
+    .content div{
+        width: 400px;
+        height: 300px;
+    }
 }
