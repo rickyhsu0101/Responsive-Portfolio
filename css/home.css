@@ -1,0 +1,282 @@
+*{
+  font-family: 'Montserrat';
+}
+#navbarToggler{
+  padding-left: calc(50vw - 600px);
+}
+#hero{
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(45, 49, 65);
+  padding-top: 35vh;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 100px), 0 100%);
+}
+#hero > *{
+  margin: 20px auto;
+  text-align: center;
+  color: white;
+}
+#hero h1{
+  font-size: 5rem;
+  letter-spacing: 3rem;
+  font-weight: 300;
+}
+#hero p{
+  font-size: 1.4rem;
+}
+h2{
+  font-size: 3rem;
+}
+h3{
+  font-size: 1.4rem;
+}
+h6{
+  font-size: 1rem;
+}
+#home{
+  margin-top: 150px;
+}
+#aboutHeading{
+  background-color: rgb(45, 49, 65);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 50%, 100% 100%, 0 100%, 10px 50%);
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 283px;
+  display: inline-block;
+}
+#softwareHeading{
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 50%, 100% 100%, 0 100%, 10px 50%);
+  color: rgb(45, 49, 65);
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 420px;
+  float: right;
+}
+#developmentHeading{
+  background-color: rgb(45, 49, 65);
+  clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 50%, 100% 100%, 0 100%, 10px 50%);
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 564px;
+  margin: auto;
+}
+.headingContainer, .headingContainer2, .headingContainer3{
+  position: relative;
+  margin-bottom: 80px;
+  width: 100%;
+  overflow: auto;
+}
+.headingContainer::after{
+  content: ""; 
+  display: inline-block;
+  width: calc(100% - 273px);
+  height: calc(50% + 1px);
+  margin-bottom: 0;
+  position: absolute;
+  top: 0;
+  border-bottom: 4px solid rgb(45, 49, 65);
+  margin-left: -10px;
+}
+.headingContainer2::before{
+  content: "";
+  display: inline-block;
+  width: calc(100% - 410px);
+  height: calc(50% + 1px);
+  margin-bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 4px solid white;
+  margin-right: -10px;
+}
+.headingContainer3 .longBar{
+  display: block;
+  width: 100%;
+  height: calc(50% + 1px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 4px solid rgb(45, 49, 65);
+  z-index: -4000;
+}
+#aboutHeading > h2, #softwareHeading > h2, #developmentHeading > h2{
+  font-weight: 300;
+  letter-spacing: 0.75rem;
+  margin-bottom: 0;
+}
+.darkBackground{
+  background-color: rgb(45, 49, 65);
+  padding-top: 40px;
+  padding-bottom: 1px;
+  margin-bottom: 40px;
+}
+.endSection{
+  width: 100%;
+  height: 20px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+.endSection.dark{
+  border-bottom: 4px solid rgb(45, 49, 65);
+}
+.endSection.light{
+  border-bottom: 4px solid white;
+  margin-bottom: 39px;
+  margin-top: 0px;
+}
+#softwareSection h3{
+  color: white;
+  text-align: center;
+  letter-spacing: 0.45rem;
+}
+#softwareSection{
+  color: white;
+}
+#softwareSection p{
+  margin-bottom: 10px;
+}
+#softwareSection .holder{
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+#softwareSection .content{
+  margin-top: 20px;
+  flex: 1 1;
+  align-self: stretch;
+  border: 4px solid white;
+  padding: 20px;
+  position: relative;
+  transition: border 0.5s;
+}
+#softwareSection .content .mask:nth-of-type(1){
+  position: absolute;
+  top: -4px;
+  left: 10%;
+  width: 40%;
+  height: 4px;
+  background-color: rgb(45, 49, 65);
+  transition: left 0.5s;
+}
+#softwareSection .content .mask:nth-of-type(3) {
+  position: absolute;
+  bottom: -4px;
+  right: 10%;
+  width: 40%;
+  height: 4px;
+  background-color: rgb(45, 49, 65);
+  transition: right 0.5s;
+}
+#softwareSection .content .mask:nth-of-type(2) {
+  position: absolute;
+  right: -4px;
+  top: 10%;
+  width: 4px;
+  height: 40%;
+  background-color: rgb(45, 49, 65);
+  transition: top 0.5s;
+}
+#softwareSection .content .mask:nth-of-type(4) {
+  position: absolute;
+  bottom: 10%;
+  left: -4px;
+  height: 40%;
+  width: 4px;
+  background-color: rgb(45, 49, 65);
+  transition: bottom 0.5s;
+}
+#softwareSection .content:hover .mask1{
+  left: 30%;
+}
+#softwareSection .content:hover .mask2 {
+  top: 30%;
+}
+#softwareSection .content:hover .mask3 {
+  right: 30%;
+}
+#softwareSection .content:hover .mask4 {
+  bottom: 30%;
+}
+#softwareSection .content:hover{
+  border: 4px solid rgb(35, 229, 255);
+}
+#softwareSection .column{
+  margin-bottom: 50px;
+}
+#developmentPane{
+  overflow: hidden;
+  position: relative;
+}
+#developmentPane .developmentItems{
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  opacity: 1.0;
+  transform: none;
+}
+#developmentPane .developmentItems > h4{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+  transition: top 0.5s ease-in-out 0.5s;
+}
+.imgWrapper{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.imgWrapper img{
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 199;
+}
+.imgWrapper .cover{ 
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:  rgba(45, 49, 65, 0.863);
+  z-index: 200;
+  transition: background-color 0.5s linear 1.0s;
+}
+.developmentItems:hover .cover{
+  background-color: rgba(45, 49, 65, 1);
+  transition: background-color 0.5s ease-in-out 0s;
+}
+.developmentItems:hover  h4{
+  top: 15% !important;
+  transition: top 0.5s ease-in-out 0s !important;
+}
+.developmentItems:hover .itemText{
+  opacity: 1 !important;
+  transition: opacity 0.5s ease-in 0.5s !important;
+}
+.developmentItems .itemText{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 80%;
+  transform: translateX(-50%);
+  text-align: left;
+  margin-top: 15px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s ease-in 0s;
+}
+

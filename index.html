@@ -1,44 +1,193 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Ricky's Portfolio</title>
-        <link rel = "stylesheet" type="text/css" href = "./style/reset.css">
-        <link rel = "stylesheet" type = "text/css" href = "./style/index.css">
-        <!--Github entry point index.html-->
-    </head>
-    <body>
-        <div class = "wrapper">
-          
-        <header>
-            <div class = "header">
-                <div class = "title"><h1>Ricky</h1></div>
-                <div class = "nav clear">
-                    <a href = "./index.html"><h3>About</h3></a>
-                    <a href = "./html/portfolio.html"><h3>Portfolio</h3></a>
-                    <a href = "./html/contact.html"><h3>Contact</h3></a>
-                </div>
-            </div>
-        </header>
-        <div class = "main">
-            <div class = "content">
-                <h2>About Me</h2>
-                <hr>
-                <img src="./img/profile.jpg">
-                <p>I am a Computer Science undergraduate student at Arizona State University. My hobby consists of drawing and playing piano. Currently, I am learning mobile and web development at the same time. This will be a challenge, but I will give it my all.</p>
-            </div>
-            <div class = "contact">
-                <h3>Connect with Me</h3>
-                <hr>
-                <img src = "./img/github.png">
-                <img src = "./img/linkedin.png">
-                <img src = "./img/stackoverflow.png">
-            </div>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
+  <link rel = "stylesheet" href = "./css/home.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id = "navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <a class="navbar-brand" href="./home.html">Ricky Hsu</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link active" href="./home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./html/projects.html">Projects</a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link" href="https://github.com/rickyhsu0101/">Github</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id = "hero">
+    <h1>RICKY HSU</h1>
+    <p>Multidisciplinary student passionate for development and innovative technologies</p>
+    <div>
+    <button type="button" class="btn btn-outline-primary">Continue</button>
+    <button type="button" class="btn btn-outline-secondary">View Projects</button>
+    </div>
+  </div>
+  <div id = "home">
+    <div class = "container-fluid" id = "about">
+      <div class = "container">
+        <div class = "headingContainer">
+          <div id = "aboutHeading">
+            <h2>ABOUT</h2>
+          </div>
         </div>
-       
+        <div class = "row">
+          <div class = "col-sm-12 col-md-4">
+            <div id = "profileDiv">
+
+            </div>
+          </div>
+          <div class = "col-sm-12 col-md-1">
+          </div>
+          <div class = "col-sm-12 col-md-7">
+            <p>
+              Welcome to my portfolio. I am a graphic designer, full-stack web developer, and a second year Computer Science and Electrical Engineering student studying at Arizona State University. I have been programming for 4 years and developing for 1 year. In the past few years, I have worked on multiple independent projects aside from coursework. My goal is to use innovative technologies to solve problems in everyday life. 
+            </p>
+          </div>
         </div>
-        <footer>
-            <h3>Copyright 2018 Ricky Hsu</h3>
-        </footer>
-    </body>
+        <div class = "endSection dark">
+
+        </div>
+      </div>
+    </div>
+    <div class = "container-fluid darkBackground" id ="softwareSection">
+      <div class = "container">
+        <div class = "headingContainer2">
+          <div id = "softwareHeading">
+            <h2>SOFTWARE</h2>
+          </div>
+        </div>
+        <div class = "row">
+          <div class = "col-sm-12 col-lg-4 column">
+            <div class = "holder">
+              <h3>LANGUAGES</h3>
+              <div class = "content">
+              <p>4 years of experience in Java</p>
+              <p>2 years of experience in C#</p>
+              <p>1 year of experience in JavaScript</p>
+              <p>2 months of experience in Python</p>
+              <p>2 months of experience in C/C++</p>
+              <p>2 months of experience in Objective C</p>
+              <div class = "mask mask1"></div>
+                <div class="mask mask2"></div>
+                <div class="mask mask3"></div>
+                <div class="mask mask4"></div>
+              </div>
+            </div>
+          </div>
+            <div class="col-sm-12 col-lg-4 column">
+            <div class = "holder">
+              <h3>TECHNOLOGIES</h3>
+              <div class = "content">
+                <p>2 years of experience with automation libraries: Selenium/PhantomJS</p>
+                <p>1.5 years of experience with frontend CSS frameworks: Material UI/Bootstrap/Semantic UI</p>
+                <p>1 year of experience in modern frontend frameworks: React/Redux/Next.js</p>
+                <p>1 year of expereince in backend frameworks: Node.js/Express.js/Mongoose</p>
+                <p>0.5 years of experience in game libraries: LibGDX, Slick2D</p>
+                <p>2 months of experience in ComponentOne</p>
+                <p>2 months of experience with NLP library: Stanford CoreNLP</p>
+                <div class = "mask mask1"></div>
+                <div class="mask mask2"></div>
+                <div class="mask mask3"></div>
+                <div class="mask mask4"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4 column">
+            <div class = "holder">
+              <h3>TOOLSET</h3>
+              <div class = "content">
+              <p>4 years of experience with programming IDE: Eclipse, Visual Studio, Spyder, Xcode</p>
+              <p>3 years of experience with version control software: Git</p>
+              <p>1 year of experience with database: MySQL, MongoDB, Firebase</p>
+              <p>1 year of experience with hosting service: Heroku</p>
+             <div class = "mask mask1"></div>
+                <div class="mask mask2"></div>
+                <div class="mask mask3"></div>
+                <div class="mask mask4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="endSection light">
+
+        </div>
+      </div>
+    </div>
+    <div class = "container-fluid" id = "developmentSection">
+      <div class = "container">
+        <div class = "headingContainer3">
+          <div id  = "developmentHeading">
+            <h2>DEVELOPMENT</h2>
+          </div>
+          <div class = "longBar"></div>
+        </div>
+        <div class = "row" id = "developmentPane">
+          <div class = "col-sm-12 col-lg-4 developmentItems" id = "webItem">
+            <h4>WEB</h4>
+            <div class = "imgWrapper">
+              <img src = "./img/webImg.jpg"/>
+              <div class = "cover"></div>
+            </div>
+            <div class = "itemText">
+              <p>Frontend State Management</p>
+              <p>Server Side Rendering</p>
+              <p>API Endpoints Creation and Usage</p>
+              <p>Json Web Token Authentication</p>
+              <p>Database Manipulation</p>
+              <p>Templating Engines</p>
+            </div>
+          </div>
+          <div class = "col-sm-12 col-lg-4 developmentItems" id = "mobileItem">
+            <h4>MOBILE</h4>
+            <div class = "imgWrapper">
+              <img src = "./img/mobileImg.png"/>
+              <div class = "cover"></div>
+            </div>
+            <div class = "itemText">
+              <p>iOS Core Graphics</p>
+              <p>iOS Core Bluetooth</p>
+            </div>
+          </div>
+          <div class = "col-sm-12 col-lg-4 developmentItems" id = "systemItem">
+            <h4>OTHER</h4>
+            <div class = "imgWrapper">
+              <img src = "./img/systemsImg.jpg"/>
+              <div class = "cover"></div>
+            </div>
+            <div class = "itemText">
+              <p>Data Mining</p>
+              <p>Naive Bayes Algorithm</p>
+              <p>Third-Party APIs</p>
+              <p>Winforms</p>
+              <p>UDP/TCP Network Protocols</p>
+              <p>Concurrency</p>
+              <p>OpenGL</p>
+            </div>
+          </div>
+        </div>
+        <div class = "endSection dark">
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
 </html>
