@@ -1,0 +1,41 @@
+*{
+  font-family: 'Montserrat';
+}
+#navbarToggler{
+  padding-left: calc(50vw - 600px);
+}
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-size: 1rem;
+}
+#footer{
+  background-color: rgba(45, 49, 65, 1);
+  height: 400px;
+  font-size: 80px;
+  padding-top: 80px;
+  color: white;
+}
+#iconLinks > div{
+  text-align: center;
+  display: inline-block;
+  margin: 0 30px;
+}
+#iconLinks{
+  display: flex;
+  justify-content: center;
+}
+#iconLinks a{
+  color: white;
+}
+#footer h3{
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+}
